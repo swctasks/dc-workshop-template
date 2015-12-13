@@ -3,20 +3,54 @@
 #--------------------------------------------------------------------------------
 workshop_repo   : "http://github.com/datacarpentry/workshop-template"
 workshop_site   : "http://datacarpentry.github.io/workshop-template"
+
 #--------------------------------------------------------------------------------
 # Standard Data Carpentry settings - should not need to be modified.
 #--------------------------------------------------------------------------------
-dc_blog        : "http://datacarpentry.github.io/blog"
-dc_contact     : "admin@datacarpentry.org"
-dc_github      : "http://github.com/datacarpentry"
-swc_installer   : "http://files.software-carpentry.org/SWCarpentryInstaller.exe"
-#dc_lessons     : "http://software-carpentry.org/v5/novice"
-dc_site        : "http://datacarpentry.org"
-dc_twitter     : "http://twitter.com/datacarpentry"
-#swc_vm          : "https://docs.google.com/uc?id=0B4Kr6DYkzkQtSTZLQzF4aVB4NDQ&export=download"
+
+blog        : "http://datacarpentry.github.io/blog"
+contact     : "admin@datacarpentry.org"
+github      : "http://github.com/datacarpentry"
+lessons     : "http://software-carpentry.org/v5/novice"
+site        : "http://datacarpentry.org"
+twitter     : "http://twitter.com/datacarpentry"
+parent_domain : "http://gvwilson.github.io/swctasks-datacarpentry.github.io"
+footer_description : "Data Carpentry is volunteer non-profit organization dedicated to teaching basic data analysis skills to researchers."
+
+installer   : "http://files.software-carpentry.org/SWCarpentryInstaller.exe"
+
+socialmedia :
+    - name: GitHub
+      url: http://github.com/datacarpentry
+      class: icon-github
+      title: Source
+    - name: Twitter
+      url: http://twitter.com/datacarpentry
+      class: icon-twitter
+      title: "Data Carpentry on Twitter"
+
+#--------------------------------------------------------------------------------
+# Services.
+#--------------------------------------------------------------------------------
+
+services:
+  - name: "Contact"
+    url: "/contact/"
+    title: "Contact"
+  - name: "RSS"
+    url: "/feed.xml"
+    title: "Subscribe to RSS Feed"
+  - name: "sitemap.xml"
+    url: "/sitemap.xml"
+    title: "Sitemap for Google Webmaster Tools"
+  - name: "License"
+    url: "/license/"
+    title: "License"
+
 #--------------------------------------------------------------------------------
 # Settings for Jekyll - should not need to be modified.
 #--------------------------------------------------------------------------------
+
 markdown        : kramdown
 kramdown        :
   entity_output : as_input # &mdash; is output as &mdash;
